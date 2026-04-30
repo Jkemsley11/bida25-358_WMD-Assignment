@@ -10,11 +10,13 @@
 	body {
 		font-family:Arial, sans-serif;
 		background-color: #eef2f3;
-		padding: 30px;
+		padding: 20px;
+		margin: 0;
 	}
 
 	form {
-		width: 400px;
+		width: 100%;
+		max-width: 400px;
 		margin: auto;
 		margin-top: 50px;
 		margin-bottom: 50px;
@@ -61,13 +63,32 @@
 	}
 	
 	.clear-bin {
-		background-color: dc3545;
+		background-color: #dc3545;
 		color: rgb(192, 208, 47);
 		margin-right: 10px;
 	}
 
 	button:hover {
 		opacity:0.9;
+	}
+
+	@media (max-width: 520px) {
+		body {
+			padding: 15px;
+		}
+		form {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			padding: 20px;
+		}
+		.buttons {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		.button {
+			width: 100%;
+		}
 	}
 
 	</style>
