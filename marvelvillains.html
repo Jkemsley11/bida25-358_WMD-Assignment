@@ -13,53 +13,105 @@
             <h1>MARVEL</h1>
             <p>The darker side of marvel</p>
         </header>
-        <!--NAVIGATION LINKS-->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="marvelheroes.html">Marvel Heroes</a>
-            <a href="marvelvillains.html">Marvel Villains</a>
-            <a href="dcheroes.html">DC</a>
-            <a href="contactus.html">Contact</a> 
-        </nav>
+<!--navigation-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> 
+       <a class="navbar-brand fw-bold" href="index.html">Home</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dcvillains.html">Dc Villains</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dcheroes.html">Dc Heroes</a> 
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="marvelheroes.html">Marvel Heroes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marvelvillains.html">Marvel Villains</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>  
+                    </li>
+                </ul> 
+            </div> 
+        </div> 
+    </nav>
         <!--BOOTSTRAP LINK-->
-        <script src="https://cdn.jsdelivr.net/npm/bootsrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <!--CONTENT-->
         <main>
-            <!--Carousel-->
-    <div class="container my-5"> 
-        <div id="carShowcase" class="carousel slide" data-bs-ride="carousel"> 
-            <div class="carousel-inner rounded shadow"> 
-                <div class="carousel-item active"> 
-                    <img src="images/car2.jpg" class="d-block w-100" alt="Slide 1"> 
-                </div> 
-                <div class="carousel-item"> 
-                    <img src="images/car3.jpg" class="d-block w-100" alt="Slide 2"> 
-                </div> 
-                <div class="carousel-item"> 
-                    <img src="images/car4.jpg" class="d-block w-100" alt="Slide 3">
+            <!--Cards-->
+        <section id="cars" class="py-5">
+        <div class="container"> 
+            <div class="text-center mb-4"> 
+                <h2 class="fw-bold">Featured Villains</h2> 
+                <p class="text-muted">Catch up on the latest adventures of your favorite Marvel villains.</p>
+            </div> 
+            <div class="row g-4">
+                 <!-- Hero 1 --> 
+                <div class="col-sm-6 col-lg-3"> 
+                    <div class="card h-100 shadow-sm"> 
+                        <img src="images/villain5.jpeg" class="card-img-top" alt="Villain 5"> 
+                        <div class="card-body"> <h5 class="card-title">Thanos</h5> 
+                            <p class="card-text text-muted">Strength • Infinity Stones</p> 
+                            <p class="card-text">Last Project: "Avengers Endgame (2019)"</p>
+                        </div> 
+                            <div class="card-footer bg-white border-0"> 
+                                <a href="contactus.html" class="btn btn-outline-primary w-100">Add Correction</a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <!-- Hero 2 -->
+                      <div class="col-sm-6 col-lg-3"> 
+                        <div class="card h-100 shadow-sm"> 
+                            <img src="images/villain6.jpeg" class="card-img-top" alt="Villain 6"> 
+                            <div class="card-body"> 
+                                <h5 class="card-title">The Mandarin</h5> 
+                                <p class="card-text text-muted">Intelligence • Terrorism </p>
+                                <p class="card-text">Last Project: "Wonder Man (2026)"</p>    
+                            </div> 
+                             <div class="card-footer bg-white border-0"> 
+                                <a href="contactus.html" class="btn btn-outline-primary w-100">Add Correction</a>
+                             </div> 
+                            </div> 
+                        </div> 
+                        <!-- Hero 3 -->
+                          <div class="col-sm-6 col-lg-3">
+                             <div class="card h-100 shadow-sm"> 
+                                <img src="images/villain7.jpeg" class="card-img-top" alt="Villain 7">
+                                 <div class="card-body"> 
+                                    <h5 class="card-title">Loki</h5> 
+                                    <p class="card-text text-muted">Intelligence • Deception</p>
+                                    <p class="card-text"> UpcomingProject: "Avengers Doomsday (2026)"</p>    
+                                </div> 
+                                <div class="card-footer bg-white border-0"> 
+                                    <a href="contactus.html" class="btn btn-outline-primary w-100">Add Correction</a> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <!-- Hero 4 -->
+                          <div class="col-sm-6 col-lg-3">
+                             <div class="card h-100 shadow-sm"> 
+                                <img src="images/villain8.jpeg" class="card-img-top" alt="Villain 8">
+                                 <div class="card-body"> 
+                                    <h5 class="card-title">Doctor Doom</h5> 
+                                    <p class="card-text text-muted">Intelligence • Technology</p>
+                                    <p class="card-text">Upcoming Project: "Avengers Doomsday (2026)"</p>    
+                                </div> 
+                                <div class="card-footer bg-white border-0"> 
+                                    <a href="contactus.html" class="btn btn-outline-primary w-100">Add Correction</a> 
+                                </div>                         
+                    </div> 
                 </div> 
             </div> 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carShowcase" data-bs-slide="prev"> 
-                <span class="carousel-control-prev-icon"></span> 
-            </button> 
-            <button class="carousel-control-next" type="button" data-bs-target="#carShowcase" data-bs-slide="next"> 
-                <span class="carousel-control-next-icon"></span> 
-            </button> 
         </div> 
-    </div>
-
-            <div class="container">
-                <section>
-                    <h1>Want to Know About Your Favorite Superheroes?</h1>
-                    <p1>Then this is the website for you. Here you can view some of the lastest news on them. For now our pages only feature the lastest and most popular characters from Dc and Marvel but stay tuned for more additions. To my left is a button to dc, to my right marvel. Feel free to pick and enjoy.</p1>
-                </section>
-            </div>
-        <!--BUTTONS-->
-            <div class="button-bar">
-                <button class="btn btn-primary btn-lrg" href="dcheroes.html">DC Button</button>
-                <button class="btn btn-primary btn-lrg" href="marvelheroes.html">Marvel Button</button>  
-            </div>
-        </main>
+    </section>
+    </main>   
         <!--FOOTER-->
         <footer>
             <p>2026 Bida25-358 Assignment:Superhero News </p>

@@ -6,6 +6,7 @@
         <title>Bida25-358 Assignment</title>
         <!--CSS LINKS-->
         <link rel="stylesheet" href="style.css">
+        <!--Bootstrap CSS-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
@@ -13,24 +14,70 @@
              <h1>Superhero News</h1>
             <p>Everything About Supeheroes Currently</p>
         </header>
-        <!--NAVIGATION LINKS-->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="dcheroes.html">Dc</a>
-            <a href="marvelheroes.html">Marvel</a>
-            <a href="contactus.html">Contact</a> 
-        </nav>
-        <!--BOOTSTRAP LINK-->
-        <script src="https://cdn.jsdelivr.net/npm/bootsrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!--CONTENT-->
-        
+         <!--navigation-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> 
+       <a class="navbar-brand fw-bold" href="index.html">Home</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> 
+            </button> 
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dcvillains.html">Dc Villains</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dcheroes.html">Dc Heroes</a> 
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="marvelheroes.html">Marvel Heroes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="marvelvillains.html">Marvel Villains</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact</a>  
+                    </li>
+                </ul> 
+            </div> 
+        </div> 
+    </nav>
+      
         <main>
-            <div class="container">
-                <section>
-                    <h1>Want to Know About Your Favorite Superheroes?</h1>
-                    <p1>Then this is the website for you. Here you can view some of the lastest news on them. For now our pages only feature the lastest and most popular characters from Dc and Marvel but stay tuned for more additions. To my left is a button to dc, to my right marvel. Feel free to pick and enjoy.</p1>
-                </section>
-            </div>
+            <!--BOOTSTRAP LINK-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!--Carousel-->
+        <div class="container my-5">
+            <div class="carousel-container">
+                <div id="carShowcase" class="carousel slide" data-bs-ride="carousel"> 
+                    <div class="carousel-inner rounded shadow"> 
+                        <div class="carousel-item active"> 
+                            <img src="images/hero1.jpeg" class="d-block w-100" alt="Slide 1"> 
+                        </div> 
+                        <div class="carousel-item"> 
+                            <img src="images/hero4.jpeg" class="d-block w-100" alt="Slide 2"> 
+                        </div> 
+                        <div class="carousel-item"> 
+                            <img src="images/hero7.jpeg" class="d-block w-100" alt="Slide 3">
+                        </div>                  
+                    </div> 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carShowcase" data-bs-slide="prev"> 
+                        <span class="carousel-control-prev-icon"></span> 
+                    </button> 
+                    <button class="carousel-control-next" type="button" data-bs-target="#carShowcase" data-bs-slide="next"> 
+                            <span class="carousel-control-next-icon"></span> 
+                    </button> 
+                </div>
+            </div> 
+        </div>
+            <!--content-->
+        </div>
+        <div class="container">
+            <section>
+                <h1>Want to Know About Your Favorite Superheroes?</h1>
+                <p1>Then this is the website for you. Here you can view some of the lastest news on them. For now our pages only feature the lastest and most popular characters from Dc and Marvel but stay tuned for more additions. To my left is a button to dc, to my right marvel. Feel free to pick and enjoy.</p1>
+            </section>
+        </div>
         <!--BUTTONS-->
             <div class="button-bar">
                 <a href="dcheroes.html" class="btn btn-primary btn-lrg">DC Button</a>
