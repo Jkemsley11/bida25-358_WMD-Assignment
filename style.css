@@ -14,12 +14,12 @@ text-align: center;
 
 /* Navigation */
 nav.navbar {
-background-color: #9453d1 !important;
-color: white !important;
+background-color: #9453d1;
+color: white;
 }
 
 nav.navbar a {
-color: white !important;
+color: white;
 }
 
 /* Main Content */
